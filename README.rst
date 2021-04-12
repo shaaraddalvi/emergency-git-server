@@ -65,14 +65,14 @@ Some caveats
 Docker usage
 ------------
 
-    A Docker image is available at https://hub.docker.com/r/shaaraddalvi/emergency-git-server.
-    
-    The server loads its content root at /repos directory which corresponds to the 'www' directory shown in examples above. 
-    You can mount your www equivalent directory there as shown below.
-    The server exposes port ``8000`` that can be mapped to port of your choice.
+A Docker image is available at https://hub.docker.com/r/shaaraddalvi/emergency-git-server.
 
-    Example usage - 
+The server loads its content root at /repos directory which corresponds to the 'www' directory shown in examples above. 
+You can mount your www equivalent directory there as shown below.
+The server exposes port ``8000`` that can be mapped to port of your choice.
 
+Example usage - 
     .. code:: console
+    
         docker run -it --rm -v /path/to/www/as/above:/repos -p 8000:8000 shaaraddalvi/emergency-git-server:latest
 
